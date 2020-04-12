@@ -2,8 +2,17 @@ const html = document.querySelector('html')
 const checkbox = document.querySelector('input#check')
 const container = document.querySelector('div.container')
 const headLabel = document.querySelector('label#headTxt')
+const titleElement = document.querySelector('head title')
+
+
+
+
 
 let appTheme = localStorage.getItem('theme') || 'light'
+
+const pageTitle = `Current theme: ${appTheme}`
+
+
 const darkTheme = {
     bgColor : '#121011',
     contColor: '#122011',
@@ -33,6 +42,7 @@ function render(){
     html.style.background = bgColor
     container.style.background = contColor
     container.style.color = fontColor
+    titleElement.innerHTML = pageTitle
 
 }
 
@@ -49,6 +59,9 @@ function generateLabel(){
 }
 
 window.onload = () => {
+    
+    titleElement.innerHTML = pageTitle
+    
     if(appTheme == 'light'){
         generateLabel()
         const { bgColor, contColor, fontColor } = lightTheme
