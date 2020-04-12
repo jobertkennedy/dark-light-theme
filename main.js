@@ -2,7 +2,7 @@ const html = document.querySelector('html')
 const checkbox = document.querySelector('input#check')
 const container = document.querySelector('div.container')
 const headLabel = document.querySelector('label#headTxt')
-const titleElement = document.querySelector('head title')
+const titleElement = document.querySelector('title#pageTitle')
 
 
 
