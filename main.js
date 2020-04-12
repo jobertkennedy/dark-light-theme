@@ -34,7 +34,6 @@ function render(){
     container.style.background = contColor
     container.style.color = fontColor
 
-    console.log(appTheme)
 }
 
 function saveTheme(){
