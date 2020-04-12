@@ -10,7 +10,7 @@ const titleElement = document.querySelector('title#pageTitle')
 
 let appTheme = localStorage.getItem('theme') || 'light'
 
-const pageTitle = `Current theme: ${appTheme}`
+const pageTitle = `Dark/Light Mode System`
 
 
 const darkTheme = {
