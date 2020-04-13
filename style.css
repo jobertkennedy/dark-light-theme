@@ -5,8 +5,8 @@ html {
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: 90vh;
 
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ div#head {
 
     width: auto;
     max-width: 450px;
-    margin: 0 auto;
+    margin: 0 10px;
 
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@ p {
     max-width: 450px;
 
 
-    margin: 0 auto;
+    margin: 0 10px 10px;
 
 
     text-align: justify;
